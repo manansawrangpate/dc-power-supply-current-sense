@@ -93,6 +93,6 @@ those directories).
 
 Original work in this repository (current-sense circuit design, PCB layout,
 calibration/analysis, and my modifications to the firmware) is licensed under
-the MIT License — see [LICENSE](LICENSE). Course-provided base firmware, the
+the MIT License - see [LICENSE](LICENSE). Course-provided base firmware, the
 third-party ST7735 display driver, and ST's HAL/CMSIS sources retain their
 original ownership/license terms as noted above.
