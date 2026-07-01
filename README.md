@@ -1,6 +1,6 @@
 # Current Sensing for Adjustable DC Power Supply
 
-This project was aimed to develop a current sense system for integration into an
+This project aimed to develop a current sense system for integration into an
 adjustable DC power supply, built as part of final design project in the course
 MIE366: Electronics for Robotics. The system maps 0–3.5 A of load current onto a
 filtered 0.25–3.3 V signal for the STM32 ADC, with a real-time LCD/rotary-encoder
