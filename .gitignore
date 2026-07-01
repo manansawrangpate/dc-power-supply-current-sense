@@ -1,0 +1,24 @@
+# STM32CubeIDE build output
+**/Debug/
+**/Release/
+**/.metadata/
+
+# Object/build files (in case they end up outside Debug/Release)
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Eclipse/CubeIDE workspace/local settings
+.metadata
+.recommenders
+*.launch
+
+# OS junk
+.DS_Store
+Thumbs.db
