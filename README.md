@@ -11,16 +11,16 @@ photos of the fabricated PCB and the EAGLE PCB layout.
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="images/Mounted_PCB_photo.png" width="100%" alt="Assembled board with LCD showing live CV output"><br>
-      <sub>Assembled board — LCD showing live CV output</sub>
+      <img src="images/PCB_Eagle_layout.png" width="100%" alt="PCB layout in EAGLE"><br>
+      <sub><i>PCB Layout in EAGLE</i></sub>
     </td>
     <td align="center" width="33%">
-      <img src="images/Backside_of_PCB.png" width="100%" alt="Soldered current-sense daughter board"><br>
-      <sub>Current-sense daughter board</sub>
+      <img src="images/Mounted_PCB_photo.png" width="100%" alt="Soldered PCB with LCD display active"><br>
+      <sub><i>Soldered PCB with LCD Display Active</i></sub>
     </td>
     <td align="center" width="33%">
-      <img src="images/PCB_Eagle_layout.png" width="100%" alt="Current-sense daughter board EAGLE layout"><br>
-      <sub>EAGLE PCB layout</sub>
+      <img src="images/Backside_of_PCB.png" width="100%" alt="PCB integrated with STM32-based power supply"><br>
+      <sub><i>PCB Integrated with STM32-based Power Supply</i></sub>
     </td>
   </tr>
 </table>
