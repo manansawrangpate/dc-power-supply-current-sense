@@ -1,15 +1,29 @@
 # Current Sensing for Adjustable DC Power Supply
 
-A current-sense front end and calibrated firmware integration for an adjustable
-DC power supply, built for MIE366 (Design & Analysis). The system maps
-0–3.5 A of load current onto a filtered 0.25–3.3 V signal for the STM32 ADC,
-with a real-time LCD/rotary-encoder interface for setting voltage/current
-targets and monitoring output.
+This project was aimed to develop a current sense system for integration into an
+adjustable DC power supply, built as part of final design project in the course
+MIE366: Electronics for Robotics. The system maps 0–3.5 A of load current onto a
+filtered 0.25–3.3 V signal for the STM32 ADC, with a real-time LCD/rotary-encoder
+interface for setting voltage/current targets and monitoring output. This repo
+consists of the firmware used to integrate the current sense system alongside
+photos of the fabricated PCB and the EAGLE PCB layout.
 
-<p align="center">
-  <img src="images/Mounted_PCB_photo.png" width="45%" alt="Assembled board with LCD showing live CV output">
-  <img src="images/Backside_of_PCB.png" width="45%" alt="Soldered current-sense daughter board">
-</p>
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="images/Mounted_PCB_photo.png" width="100%" alt="Assembled board with LCD showing live CV output"><br>
+      <sub>Assembled board — LCD showing live CV output</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/Backside_of_PCB.png" width="100%" alt="Soldered current-sense daughter board"><br>
+      <sub>Current-sense daughter board</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/PCB_Eagle_layout.png" width="100%" alt="Current-sense daughter board EAGLE layout"><br>
+      <sub>EAGLE PCB layout</sub>
+    </td>
+  </tr>
+</table>
 
 ## What this project covers
 
@@ -19,9 +33,7 @@ targets and monitoring output.
   3rd-order 5 kHz low-pass filter (35 dB attenuation) rejects switching-regulator
   noise and prevents ADC aliasing.
 - **PCB (EAGLE):** the analog schematic translated into a custom 2-layer
-  current-sense daughter board (layout, Gerbers, BOM) — ground pour, short
-  high-current traces, and component keepout regions — soldered and mounted
-  onto the base power-supply board.
+  current-sense PCB soldered and mounted onto the base power-supply board.
 - **Firmware (STM32G051):** ADC calibration mapping load current to a
   measured value (R² = 0.999), a real-time voltage/current control loop, and
   a rotary-encoder + LCD UI for setting/displaying targets.
@@ -29,10 +41,6 @@ targets and monitoring output.
   outputs under step-load conditions, confirming −35 dB attenuation at 5 kHz
   and ≤250 mV output noise; diagnosed ground-related ripple near the cutoff
   frequency and documented simulated-vs-measured discrepancies.
-
-<p align="center">
-  <img src="images/PCB_Eagle_layout.png" width="45%" alt="Current-sense daughter board EAGLE layout">
-</p>
 
 ## Repository contents
 
